@@ -47,7 +47,7 @@ pipeline {
         branch 'master'
       }
       steps {
-        dir('./charts/demo189') {
+        dir('./demo189/charts/demo189') {
           sh "jx step changelog --version v\$(cat ../../VERSION)"
 
           // release the helm chart
